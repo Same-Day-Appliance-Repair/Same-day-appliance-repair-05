@@ -11,33 +11,10 @@ import LogoBrands from "@components/js/logo-brands.astro";
 
 import "css/price/style_price.css";
 
-const description = "Click for the real costs of Dishwasher repairs & helpfull tips! Find a reliable technicians, and make informed decisions. Call: (424) 325-0531";
-const title ="Dishwasher Repair Cost - Labor & Parts Pricing - Ultimate Guide";
 ---
-<title>{title}</title>
-<meta name="description" content={description} />
 
-
-
-<!-- частые вопросы -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    let coll = document.getElementsByClassName("FAQ");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  });
-</script>
-
-<Navbar />
+    <Layout title="Dishwasher Repair Cost - Labor & Parts Pricing - Ultimate Guide" description="Click for the real costs of Dishwasher repairs & helpfull tips! Find a reliable technicians, and make informed decisions. Call: (323) 870-4790">
+  <Navbar />
 <Reviews />
  
   <Container>
@@ -1409,3 +1386,20 @@ const title ="Dishwasher Repair Cost - Labor & Parts Pricing - Ultimate Guide";
  
 <Cta />
 <LogoBrands />
+<!-- частые вопросы -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    let coll = document.getElementsByClassName("FAQ");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+</script>

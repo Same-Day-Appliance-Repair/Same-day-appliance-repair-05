@@ -5,8 +5,6 @@ import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import Layout from "@layouts/Layout.astro";
 
-import "components/css-components/style-header.css";
-
 const menuitems = [
   {
     title: "Home Appliance Services",
@@ -48,6 +46,7 @@ const menuitems = [
       {title: "Commercial Bar Refrigerator Repair", path: "/services/bar-refrigerator-repair-los-angeles/" },
       {title: "Commercial Washing Machine Repair", path: "/services/commercial-washing-machine-repair-los-angeles/" },
       {title: "Commercial Stove Repair", path: "/services/commercial-stove-repair-los-angeles/" },
+      {title: "Commercial Laundry Repair", path: "/services/commercial-laundry-machine-repair-los-angeles/"},
     ],
   },
 
@@ -69,28 +68,36 @@ const menuitems = [
     title: "Service Areas",
     path: "/areas/los-angeles-and-surrounding-areas/",
     children: [
+    
+    { title: "Alhambra", path: "/areas/alhambra/"},
+    { title: "Beverly Hills", path: "/areas/beverly-hills/"},
+    { title: "Brentwood", path: "/areas/brentwood/" },
+    { title: "Burbank", path: "/areas/burbank/"},
+    { title: "Culver City", path: "/areas/culver-city/" },
+    { title: "Downtown Los Angeles", path: "/areas/downtown-los-angeles/"},
+    { title: "East Hollywood", path: "/areas/east-hollywood/"},
+    { title: "Glendale", path: "/areas/glendale/"},
+    { title: "Glessell Park", path: "/areas/glessell-park/"},
+    { title: "Hollywood", path: "/areas/hollywood/"},
+    { title: "Hollywood Hills", path: "/areas/hollywood-hills/"},
+    { title: "Ladera Heights", path: "/areas/ladera-heights/"},
       { title: "Los Angeles", path: "/areas/los-angeles/" },
-      { title: "Culver City", path: "/areas/culver-city/" },
-      { title: "Pasadena", path: "/areas/pasadena/" },
       { title: "Los Feliz", path: "/areas/los-feliz/" },
-      { title: "Marina Del Rey", path: "/areas/marina-del-rey/" },
-      { title: "Santa Monica", path: "/areas/santa-monica/" },
-      { title: "Malibu", path: "/areas/malibu/" },
       { title: "Los Angeles County", path: "/areas/los-angeles-and-surrounding-areas/"},
-      { title: "Burbank", path: "/areas/burbank/"},
-      { title: "Alhambra", path: "/areas/alhambra/"},
-      { title: "Glendale", path: "/areas/glendale/"},
-      { title: "Beverly Hills", path: "/areas/beverly-hills/"},
+      { title: "Malibu", path: "/areas/malibu/" },
+      { title: "Marina Del Rey", path: "/areas/marina-del-rey/" },
       { title: "Monterey Park", path: "/areas/monterey-park/"},
-      { title: "Thousand Oaks", path: "/areas/thousand-oaks/"},
-      { title: "West Hollywood", path: "/areas/west-hollywood/"},
-      { title: "San Marino", path: "/areas/san-marino/"},
-      { title: "South Pasadena", path: "/areas/south-pasadena/"},
-      { title: "Glessell Park", path: "/areas/glessell-park/"},
-      { title: "East Hollywood", path: "/areas/east-hollywood/"},
+      { title: "North Hollywood", path: "/areas/north-hollywood/"},
+      { title: "Pacific Palisades", path: "/areas/pacific-palisades/"},
+      { title: "Pasadena", path: "/areas/pasadena/" },
       { title: "Playa Del Rey", path: "/areas/playa-del-rey/"},
-      { title: "Downtown Los Angeles", path: "/areas/downtown-los-angeles/"},
-      { title: "Ladera Heights", path: "/areas/ladera-heights/"},
+      { title: "San Marino", path: "/areas/san-marino/"},
+      { title: "Santa Monica", path: "/areas/santa-monica/" },
+      { title: "Silver Lake", path: "/areas/silver-lake/" },
+      { title: "South Pasadena", path: "/areas/south-pasadena/"},
+      { title: "Thousand Oaks", path: "/areas/thousand-oaks/"},
+      { title: "West Hollywood", path: "/areas/west-hollywood/"},  
+      
     ],
   },
 
@@ -233,7 +240,6 @@ const menuitems = [
   },
 ];
 ---
-<Layout>
   <Container>
     <header class="flex flex-col lg:flex-row justify-between items-center my-5 header-full">
       <div class="inside-reviews_header-full">
@@ -259,7 +265,7 @@ const menuitems = [
               <div class="hidden lg:flex items-center gap-4">
                 <div class="header-bootun">
                   <div class="call-header">
-                    <a href="tel:+14243250520">(424) 325-0520</a>
+                    <a href="tel:+13238704790">(323) 870-4790</a>
                   </div>
 
                   <!--Start of Housecallpro Online booking button-->
@@ -281,7 +287,7 @@ const menuitems = [
               <div class="block lg:hidden">
                 <div class="header-bootun-1024">
                   <div class="call-header-1024">
-                    <a href="tel:+14243250520">(424) 325-0520</a>
+                    <a href="tel:+13238704790">(323) 870-4790</a>
                   </div>
                 </div>
                 <MenuIcon class="w-4 h-4 text-gray-800" />
@@ -322,7 +328,7 @@ const menuitems = [
               <!--Red Buttons In the black header on Mobile-->
               <div class="lg:hidden flex items-center mt-3 gap-4">
                 <Link href="tel:+14243250520" style="muted" block size="md"
-                  >CALL: (424) 325-0520</Link
+                  >CALL: (323) 870-4790</Link
                 >
 
                 <!--Start of Housecallpro Online booking button-->
@@ -347,7 +353,7 @@ const menuitems = [
         <!-- <div class="hidden lg:flex items-center gap-4">
             <div class="header-bootun">
               <div class="call-header">
-                <a href="tel:+14243250520">(424) 325-0520</a>
+                <a href="tel:+13238704790">(424) (323) 870-4790</a>
               </div>
 
             

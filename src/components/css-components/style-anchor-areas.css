@@ -58,5 +58,6 @@
       height: 75px;
       margin-top: -75px;
     }
-  
-}
+    ul {
+      color: #000;
+  }}

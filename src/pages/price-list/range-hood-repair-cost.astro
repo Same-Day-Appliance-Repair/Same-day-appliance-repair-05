@@ -9,34 +9,10 @@ import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
 
 import "css/price/style_price.css";
-
-const description = "Click for the real costs of range hood repairs with our comprehensive guide. Find a reliable technicians, and make informed decisions. Call: (424) 325-0544";
-const title ="Range Hood Repair Cost - Labor & Parts - Online Estimates";
 ---
-<title>{title}</title>
-<meta name="description" content={description} />
 
-
-
-<!-- частые вопросы -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", function () {
-    let coll = document.getElementsByClassName("FAQ");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  });
-</script>
-
-<Navbar />
+    <Layout title="Range Hood Repair Cost - Labor & Parts - Online Estimates" description="Click for the real costs of range hood repairs with our comprehensive guide. Find a reliable technicians, and make informed decisions. Call: (323) 870-4790">
+  <Navbar />
 <Reviews />
   <Container>
     <main>
@@ -2132,3 +2108,20 @@ const title ="Range Hood Repair Cost - Labor & Parts - Online Estimates";
   </Container>
  
 <Cta />
+<!-- частые вопросы -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    let coll = document.getElementsByClassName("FAQ");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+</script>

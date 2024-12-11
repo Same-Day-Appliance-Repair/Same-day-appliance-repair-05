@@ -1,125 +1,629 @@
 ---
-import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Contactbtn from "@components/contactbtn.astro";
-import Features from "@components/features.astro";
-import Hero from "@components/hero.astro";
-import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Btn from "@components/btn.astro";
+import Cta from "@components/cta.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import Reviews from "@components/reviews.astro";
+import Arrow from "@components/js/arrow-phone.astro";
+import Areas from "@components/areas.astro";
+import Focus from "@components/js/focus-menu.astro";
+import Faqs from "@components/js/faqs.astro";
+import LogoBrands from "@components/js/logo-brands.astro";
+import ContactForm from "@components/contact-form.astro";
+import Areas from "@components/areas.astro";
 
 import "css/service/style_services.css";
-
-const description = "Fast & reliable range hood repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (424) 325-0520";
-const title ="Expert Range Hood Repair Los Angeles - Fast & Reliable";
 ---
-<title>{title}</title>
-<meta name="description" content={description} />
-
-<Navbar />
+<Layout title="Expert Range Hood Repair Los Angeles - Fast & Reliable" description="Fast & reliable range hood repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (323) 870-4790">
+  <Navbar />
 <Reviews />
  
-  <Container>
-    <main style="max-width: 1920px; padding: 0 10%; margin: 0 auto;">
-      <h1>
-        <span class="animate-charcter">Same Day Range Hood Repair</span> Los Angeles
-        and Surrounding Areas
-      </h1>
+<Container>
+  <main>
+    <div class="page-header">
+      <div class="page-header-d-full">
+        <div class="page-header-d">
+          <h1><span class="animate-charcter">Same-Day Range Hood Repair Services in Los Angeles and Nearby Areas</span></h1>
+        </div>
+      </div>
+          <div class="page-header-f">
+            <div class="page-header-f-rel">
+              <img
+                  width="2000px"
+                  height="1000px"
+                  src="/images/range-hood-repair-los-angeles-and-surrounding-area.webp"
+                  alt="Microwave repair Los Angeles"
+                />
+            </div>
+            <div class="page-header-f-gradient"></div>
+          </div>
 
-      <div class="two-col-grid">
-        <div class="col-one">
-          <img
-            class="img-header"
-            src="/images/range-hood-repair-los-angeles-and-surrounding-area.webp"
-            width="500"
-            height="500"
-            alt="Range Hood Repair Services Los Angeles - technician repairing an oven"
-          />
-          <Contactbtn />
+      <div class="page-header-p-full">
+        <div class="page-header-p">
+          <p style="text-align: start">At <strong>Same Day Appliance Repair</strong>, we specialize in <strong>range hood repair services</strong>, ensuring your kitchen stays fresh and free of <strong>smoke</strong>, <strong>steam</strong>, and <strong>airborne grease</strong>. Whether your <strong>range hood</strong> has a faulty <strong>fan motor</strong>, a defective <strong>control board</strong>, or clogged ductwork, our experienced <strong>service technicians</strong> are here to provide reliable solutions.</p><p style="text-align: start">We repair all types of <strong>range hoods</strong>, including <strong>vent hoods</strong>, <strong>kitchen exhaust fans</strong>, and <strong>blower wheel housings</strong>, from major brands such as Whirlpool, GE, Samsung, LG, KitchenAid, and Bosch. Using top-quality replacement parts, we resolve issues like noisy <strong>fan blades</strong>, malfunctioning <strong>lights</strong>, and clogged filters. Don’t let a broken <strong>range hood</strong> disrupt your cooking routine—schedule a same-day <strong>range hood repair</strong> with our team today!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="page213">
+    <div class="open-full_left">
+      <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <path id="arrow-left-menu" d="M4 12H20M20 12L16 8M20 12L16 16" stroke="rgb(59, 59, 59)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+      </svg>
+    </div>
+
+    <div class="full_left_menu_r">
+      <div class="list_left"><a href="#form"><h2>Contact Form</h2></a></div>
+      <div class="list_left"><a href="#why-us"><h2>Why Choose Same Day Appliance Repair for Range Hood Services?</h2></a></div>
+      <div class="list_left"><a href="#types"><h2>Types of Range Hood We Repair and Our Specialized Approach</h2></a></div>
+      <div class="list_left"><a href="#problems"><h2>Common Range Hood Problems We Fix</h2></a></div>
+      <div class="list_left"><a href="#signs"><h2>Signs Your Range Hood Needs Repair – When to Call Us</h2></a></div>
+      <div class="list_left"><a href="#industries"><h2>Full-Service Range Hood Repair for Every Home</h2></a></div>
+      <div class="list_left"><a href="#maintenance"><h2>Routine Range Hood Maintenance Service for Longevity and Efficiency</h2></a></div>
+      <div class="list_left"><a href="#repair-replace"><h2>Deciding Between Repair and Replacement</h2></a></div>
+      <div class="list_left"><a href="#contact"><h2>Contact Us for Range Hood Repair Services in Los Angeles</h2></a></div>
+      <div class="list_left"><a href="#brands"><h2>Brands</h2></a></div>
+      <div class="list_left"><a href="#areas"><h2>Areas We Serve</h2></a></div>
+      <div class="list_left"><a href="#faqs"><h2>FAQs</h2></a></div>
+    </div>
+
+    <div class="page213-container">
+      <div class="page213-content" id="form">
+        <div class="content__page-desc"><ContactForm /></div>
+        <Btn />
+      </div>
+
+      <div class="page213-content" id="why-us">
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h"><h2><strong>Why Choose Same Day Appliance Repair for Range Hood Repairs?</strong></h2></div>
+          <div class="content__page-full-desc">
+            <div class="content__page-desc-phot">
+              <img
+                src="/microwave-repair/microwave-repair-2.webp"
+                loading="lazy"
+                width="400px"
+                height="500px"
+                alt="Microwave Repair"
+              />
+            </div>
+            <p>When it comes to <strong>range hood repair</strong>, we combine expertise, the right tools, and high-quality replacement parts to deliver exceptional results. Here’s why homeowners in Los Angeles trust us:</p><h3><strong>Same-Day Service</strong></h3><p style="text-align: start">A malfunctioning <strong>range hood</strong> can quickly turn your <strong>cooking area</strong> into an uncomfortable space filled with <strong>smoke</strong> and <strong>steam</strong>. Our same-day service ensures your <strong>vent hood</strong> is fixed promptly so you can return to a clean, comfortable kitchen.</p><h3><strong>Professional Technicians</strong></h3><p style="text-align: start">Our certified <strong>repairmen</strong> are trained to handle a variety of issues, including faulty <strong>fan motors</strong>, damaged <strong>fan blades</strong>, and defective <strong>control boards</strong>. They bring years of experience and professionalism to every job, ensuring your <strong>range hood</strong> is repaired correctly the first time.</p><h4 style="text-align: start"><strong>Top-Quality Replacement Parts</strong></h4><p style="text-align: start">We use only original parts, such as <strong>motor bearings</strong>, switches, and filters, to guarantee lasting results. From replacing a <strong>blower wheel housing</strong> to fixing a defective <strong>control board</strong>, we ensure your appliance operates like new.</p><h3><strong>Transparent Pricing</strong></h3><p style="text-align: start">We provide upfront quotes for all labor and parts, so you’ll know the exact <strong>pricing</strong> before any work begins. No surprises—just honest, reliable service.</p>
+          </div>
+        </div>
+        <Btn />
+      </div>
+
+      <div class="page213-content" id="types">
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h"><h2><strong>Range Hood Types We Fix - How We Repair Them</strong></h2></div>
+          <div class="content__page-full-desc">
+            <div class="content__page-desc-phot">
+              <img
+                src="/microwave-repair/microwave-repair-3.webp"
+                width="400px"
+                height="500px"
+                alt="Microwave Repair"
+                loading="lazy"
+              />
+            </div>
+
+           <p>Our technicians fix <strong>all range hoods</strong> to get your <strong>kitchen ventilation system</strong> running like new. Here’s how we address <strong>common issues</strong> with different <strong>range hood models</strong>:</p><h3><strong>Under-Cabinet Range Hood</strong></h3><p><strong>Under-cabinet range hoods</strong> are small and <strong>space-saving</strong> but often have:</p><ul><li><p><strong>Bad fan motors</strong></p></li><li><p><strong>Clogged filters</strong></p></li><li><p><strong>Lighting issues</strong></p></li></ul><p>We clean or replace <strong>filters</strong>, repair or replace bad <strong>fan motors</strong>, and fix <strong>lighting problems</strong>.</p><h3><strong>Wall-Mounted Range Hood</strong></h3><p><strong>Wall-mounted range hoods</strong> have <strong>great ventilation</strong> and a <strong>modern look</strong> but may have:</p><ul><li><p><strong>Poor airflow</strong></p></li><li><p><strong>Broken blower motors</strong></p></li><li><p><strong>Damaged control panels</strong></p></li></ul><p>Our technicians inspect and repair <strong>blower motors</strong>, clean <strong>vent ducts</strong>, and replace defective <strong>control boards</strong> so your <strong>range hood works properly</strong>.</p><h3><strong>Island Range Hood</strong></h3><p><strong>Island range hoods</strong> are designed for <strong>kitchens with island cooktops</strong> and ventilate from above. Common issues are:</p><ul><li><p><strong>Noise</strong></p></li><li><p><strong>Grease buildup in filters</strong></p></li><li><p><strong>Faulty sensors or controls</strong></p></li></ul><p>We fix <strong>noise</strong> by repairing or replacing <strong>fan motors</strong>, clean <strong>filters thoroughly</strong>, and recalibrate or replace defective <strong>sensors and control systems</strong>.</p><h3><strong>Ductless Range Hood</strong></h3><p><strong>Ductless range hoods</strong>, which <strong>filter and recirculate air</strong>, are great for spaces without exterior venting. They often have:</p><ul><li><p><strong>Clogged charcoal filters</strong></p></li><li><p><strong>Ineffective odor removal</strong></p></li><li><p><strong>Damaged fan blades</strong></p></li></ul><p>We clean or replace <strong>charcoal filters</strong>, repair damaged <strong>fan blades</strong>, and optimize <strong>airflow</strong> to improve <strong>odor and grease removal</strong>.</p><h3><strong>Commercial Range Hood</strong></h3><p><strong>Commercial range hoods</strong> used in <strong>restaurants</strong> and <strong>large kitchens</strong> are heavily used and often have:</p><ul><li><p><strong>Damaged fan belts or motors</strong></p></li><li><p><strong>Grease trap blockages</strong></p></li><li><p><strong>Electrical issues</strong></p></li></ul><p>We repair <strong>commercial range hoods</strong> by replacing <strong>fan belts</strong>, clearing <strong>grease traps</strong>, and addressing <strong>electrical problems </strong>so your kitchen meets <strong>safety codes</strong> and runs smoothly.</p>
+          </div>
+        </div>
+        <Btn />
+      </div>
+
+      <div class="page213-content" id="problems">
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h"><h2><strong>Common Range Hood Problems and How We Fix Them</strong></h2></div>
+          <div class="content__page-full-desc">
+            <div class="content__page-desc-phot">
+              <img
+                src="/microwave-repair/microwave-repair-4.webp"
+                width="400px"
+                height="500px"
+                alt="Microwave Repair"
+                loading="lazy"
+              />
+            </div>
+           <p style="text-align: start">Our team has extensive experience diagnosing and repairing a wide range of <strong>range hood issues</strong>. Here’s how we handle the most common problems:</p><h3><strong>Range Hood Fan Not Working</strong></h3><p style="text-align: start"><strong>How We Fix It:</strong> The issue could be with the <strong>fan motor</strong>, <strong>fan blades</strong>, or electrical components. Our technicians test the <strong>motor bearings</strong>, replace damaged <strong>fan blades</strong>, and ensure the fan operates smoothly to clear smoke and steam effectively.</p><h3><strong>Noisy Exhaust Fan</strong></h3><p style="text-align: start"><strong>How We Fix It:</strong> A noisy <strong>kitchen exhaust fan</strong> often points to loose <strong>fan blades</strong> or worn-out <strong>motor bearings</strong>. We secure the components, replace faulty parts, and eliminate the noise for quieter operation.</p><h3><strong>Lights Not Working</strong></h3><p style="text-align: start"><strong>How We Fix It:</strong> Faulty wiring, burned-out bulbs, or damaged <strong>control boards</strong> can disrupt your <strong>range hood lighting</strong>. Our technicians replace bulbs, test wiring, and fix or replace defective components to restore proper lighting.</p><h3><strong>Weak Ventilation</strong></h3><p style="text-align: start"><strong>How We Fix It:</strong> If your <strong>vent hood</strong> struggles to remove grease and odors, the problem may lie in a clogged filter or a failing <strong>blower wheel housing</strong>. We clean or replace filters, inspect ductwork, and repair or replace the blower to ensure efficient ventilation.</p><h3><strong>Range Hood Won’t Turn On</strong></h3><p style="text-align: start"><strong>How We Fix It:</strong> A tripped <strong>circuit breaker</strong>, defective <strong>switch</strong>, or damaged electrical components could prevent your <strong>range hood</strong> from powering on. We test the electrical system, replace faulty parts, and get your appliance running again.</p></li></ul>
+          </div>
+        </div>
+        <Btn />
+      </div>
+
+      <div class="page213-content" id="signs">
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h"><h2><strong>Signs Your Range Hood Needs Repair – Insights from Our Technicians</strong></h2></div>
+          <div class="content__page-full-desc">
+            <div class="content__page-desc-phot">
+              <img
+              src="/microwave-repair/microwave-repair-6.webp"
+              width="400px"
+              height="500px"
+              alt="Microwave Repair"
+              loading="lazy"
+            />
+            </div>
+
+            <p style="text-align: start">Our skilled <strong>repairmen</strong> often encounter warning signs that indicate your <strong>range hood</strong> may need professional attention. Watch out for these issues:</p><ul><li><p><strong>Persistent Smoke or Steam:</strong> If your <strong>range hood</strong> isn’t clearing smoke effectively, it’s time for a professional inspection.</p></li><li><p><strong>Unusual Noises:</strong> Grinding or rattling sounds usually point to worn-out <strong>motor bearings</strong> or loose <strong>fan blades</strong>.</p></li><li><p><strong>Weak Suction Power:</strong> A clogged <strong>filter</strong> or faulty motor can reduce your hood’s efficiency.</p></li><li><p><strong>Flickering Lights:</strong> Intermittent lighting signals electrical issues or a defective <strong>control board</strong>.</p></li><li><p><strong>Grease Build-Up:</strong> Excessive grease accumulation may indicate that your hood isn’t functioning properly and needs repair or maintenance.</p>
+          </div>
+        </div>
+        <Btn />
+      </div>
+
+      <div class="page213-content" id="industries">
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h"><h2><strong>Full-Service Range Hood Repair</strong></h2></div>
+          <div class="content__page-full-desc">
+            <div class="content__page-desc-phot">
+              <img
+                src="/microwave-repair/microwave-repair-1.webp"
+                width="400px"
+                height="500px"
+                alt="Microwave Repair"
+                loading="lazy"
+              />
+            </div>
+            <p style="text-align: start">We provide comprehensive <strong>range hood repair services</strong> to address all issues efficiently and effectively. Here’s what we offer:</p><h3><strong>Wall-Mounted Range Hood Repair</strong></h3><p style="text-align: start">Our technicians repair wall-mounted hoods, tackling problems like noisy <strong>fans</strong>, clogged ducts, and faulty electrical systems.</p><h3><strong>Under-Cabinet Range Hood Repair</strong></h3><p style="text-align: start">We specialize in under-cabinet range hood repairs, including fixing weak ventilation, damaged switches, and <strong>motor replacements</strong>.</p><h3><strong>Island Range Hood Repair</strong></h3><p style="text-align: start">Island range hoods require precise attention due to their unique placement. Our team handles <strong>motor repairs</strong>, duct inspections, and <strong>fan blade replacements</strong> with care and expertise.</p>
+          </div>
+        </div>
+        <Btn />
+      </div>
+
+      <div class="page213-content" id="maintenance">
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h"><h2><strong>Maintenance Services for Long-Lasting Range Hoods</strong></h2></div>
+          <div class="content__page-full-desc">
+            <p style="text-align: start">Regular maintenance is essential for keeping your <strong>range hood</strong> in top condition. Here’s what our services include:</p><ul><li><p><strong>Filter Cleaning or Replacement:</strong> Prevent clogs and improve ventilation with routine filter maintenance.</p></li><li><p><strong>Ductwork Inspection:</strong> Identify and resolve blockages in your vent system for optimal airflow.</p></li><li><p><strong>Fan Motor Testing:</strong> Ensure the <strong>motor bearings</strong> and fan are operating efficiently to avoid noisy operation.</p></li><li><p><strong>Grease Removal:</strong> Clean internal components to prevent grease build-up and fire hazards.</p></li></ul>
+          </div>
+        </div>
+        <Btn />
+      </div>
+
+      <div class="page213-content" id="repair-replace">
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h"><h2><strong>Deciding Between Microwave Repair and Replacement</strong></h2></div>
+          <div class="content__page-desc">
+            <p style="text-align: start">If your <strong>range hood</strong> has frequent issues or the repair cost exceeds 50% of the price of a new unit, replacement may be the best option. We’ll help you decide based on:</p><ul><li><p><strong>Age of the Hood:</strong> Older models may lack efficiency and advanced features.</p></li><li><p><strong>Repair Frequency:</strong> Frequent breakdowns suggest it’s time for an upgrade.</p></li><li><p><strong>Energy Efficiency:</strong> Modern range hoods are quieter, more powerful, and energy-efficient.</p></li></ul>
+          </div>
+        </div>
+        <Btn />
+      </div>
+
+      <div class="page213-content" id="contact">
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h"><h2><strong>Contact Us for Range Hood Repair Services in Los Angeles</strong></h2></div>
+          <div class="content__page-full-desc">
+            <p style="text-align: start">Don’t let a malfunctioning <strong>range hood</strong> disrupt your kitchen. Contact Same Day Appliance Repair today for expert <strong>range hood repair services</strong>. Our team is ready to diagnose and fix any issue, ensuring your <strong>vent hood</strong> is working properly.</p>
+
+          </div>
+        </div>
+        <Btn />
+      </div>
+     
+      <div class="page213-content" id="left-menu-5">
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h">
+            <h2>Range Hood Brands We repair</h2>
+          </div>
+          <div class="content__page-hed-desc"></div>
+        </div>
+      
+        <div class="content__page-full-logo-brand">
+          <div class="ph-logo-brand">
+            <div class="logo-brand logo-bran-ph-1">
+              <a href="#">
+                <img
+                  width="300px"
+                  height="300px"
+                  src="/brand-logos/viking.webp"
+                  alt="Viking Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-2">
+              <a href="#">
+                <img
+                  width="370px"
+                  height="300px"
+                  src="/brand-logos/thermador.webp"
+                  alt="Thermador Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-3">
+              <a href="#">
+                <img
+                  width="230px"
+                  height="300px"
+                  src="/brand-logos/GE-general-electric.webp"
+                  alt="GE Monogram Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-4">
+              <a href="#">
+                <img
+                  width="240px"
+                  height="300px"
+                  src="/brand-logos/lg.webp"
+                  alt="LG Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-5">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/miele.webp"
+                  alt="Miele Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-6">
+              <a href="#">
+                <img
+                  width="300px"
+                  height="300px"
+                  src="/brand-logos/whirlpool.webp"
+                  alt="Whirlpool Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-7">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/zephyr.webp"
+                  alt="Zephyr Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-8">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/KitchenAid.webp"
+                  alt="KitchenAid Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-9">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/Bosch.webp"
+                  alt="Bosch Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-10">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/jennAir.webp"
+                  alt="JennAir Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-11">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/bertazzoni.webp"
+                  alt="Bertazzoni Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-12">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/bluestar.webp"
+                  alt="BlueStar Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-13">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/electrolux.webp"
+                  alt="Electroluxe Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-14">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/smeg.webp"
+                  alt="Smeg Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+            <div class="logo-brand logo-bran-ph-15">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/lacornue.webp"
+                  alt="La Cornue Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+             <div class="logo-brand logo-bran-ph-16">
+              <a href="#">
+                <img
+                  width="290px"
+                  height="300px"
+                  src="/brand-logos/broan.webp"
+                  alt="Broan Range Hood repair in Los Angeles"
+                />
+              </a>
+            </div>
+
+          </div>
+
+          <div class="full-desc-logo-brand">
+            <p>Range Hood Brands We repair</p>
+
+            <div class="desc-logo-brand logo-bran-d-1">
+              <h3><a href="#">Viking</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-2">
+              <h3><a href="#">Thermador</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-3">
+              <h3><a href="#">GE Monogram</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-4">
+              <h3><a href="#">LG Electronics</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-5">
+              <h3><a href="#">Miele</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-6">
+              <h3><a href="#">Whirlpool</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-7">
+              <h3><a href="#">Zephyr</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-8">
+              <h3><a href="#">KichenAid</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-9">
+              <h3><a href="#">Bosch</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-10">
+              <h3><a href="#">JennAir</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-11">
+              <h3><a href="#">Bertazzoni</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-12">
+              <h3><a href="#">BlueStar</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-13">
+              <h3><a href="#">Elecrolux</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-14">
+              <h3><a href="#">Smeg</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-15">
+              <h3><a href="#">La Cornue</a></h3>
+            </div>
+
+            <div class="desc-logo-brand logo-bran-d-16">
+              <h3><a href="#">Broan</a></h3>
+            </div>
+
+
+
+
+
+          </div>
         </div>
 
-        <div class="col-two"></div>
+     
+
+          <Btn />
+        </div>
+
+
+      <div class="page213-content" id="areas">
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h"><h2><strong>Areas We Serve for Range Hood Repair</strong></h2></div>
+          <div class="content__page-full-desc">
+            <p style="text-align: start">We proudly serve Los Angeles and nearby areas, including Beverly Hills, Santa Monica, Pasadena, and Glendale. Our technicians also cover suburbs like Culver City, West Hollywood, Burbank, and Marina Del Rey. Wherever you are, our <strong>range hood repair experts</strong> are ready to assist. Call us today for same-day service!</p>
+            
+            <p style="text-align: start">Major areas we serve: </p>
+            <div class="content__page-desc">
+              <Areas />
+              </div>
+          </div>
+        </div>
+        <Btn />
       </div>
-      <h2>Why Choose Our Range Hood Repair Services in Los Angeles</h2><h3>
-        <strong>Rapid Same-Day Service</strong>:
-      </h3><p>
-        We understand the inconvenience caused by a dysfunctional range hood, so
-        we offer same-day repair services across Los Angeles. We aim to address
-        your appliance issues quickly, often resolving them in a single visit.
-      </p><h3><strong>Economical Diagnostic Fee</strong></h3><p>
-        Our diagnostic fee is competitively priced, and we waive it if you
-        choose our repair services, making our offerings even more
-        budget-friendly.
-      </p><h3><strong>Skilled Repair Technicians</strong></h3><p>
-        Our team comprises certified professionals adept at efficiently
-        diagnosing and repairing range hood issues. Whether your range hood is
-        ducted or ductless, our technicians are equipped to provide prompt,
-        effective repairs.
-      </p><h3>
-        <strong>Residential Range Hood Repair in Los Angeles</strong>
-      </h3><p style="text-align: start">
-        Selecting Same Day Appliance Repair for your range hood issues affords
-        significant advantages for homeowners. Our services ensure that your
-        range hood operates efficiently and safely, with benefits including
-        access to skilled technicians, swift service, fair pricing, genuine
-        parts, extensive warranties, and a commitment to customer satisfaction.
-      </p><h3>
-        <strong>Commercial Range Hood Repair Services in Los Angeles</strong>
-      </h3><p style="text-align: start">
-        We also cater to commercial range hoods for restaurants, cafes, and
-        other food service establishments. Our certified technicians recognize
-        the critical role of a fully operational range hood in these
-        environments and provide quick, dependable, and cost-effective repair
-        solutions to minimize downtime and maintain your business's operations.
-      </p><h2><strong>Range Hood Repair FAQs</strong></h2><h3>
-        <strong>Common Range Hood Repair Issues</strong>:
-      </h3><p>
-        We address a variety of common problems, including poor ventilation,
-        loud or unusual noises, lighting failures, and control panel issues.
-      </p><h3>
-        <strong>Signs You Need Professional Range Hood Repair</strong>
-      </h3><p>
-        If you notice persistent problems like ineffective smoke or odor
-        removal, excessive noise, or non-functional lights, it's time to seek
-        professional assistance.
-      </p><h3><strong>Repair or Replace Your Range Hood?</strong></h3><p>
-        Consider repairs if your range hood is relatively new, the repair costs
-        are reasonable, and the appliance has been dependable. Replacement might
-        be more appropriate if the range hood is old, repairs are frequent, or
-        the cost of repair approaches the price of a new unit.
-      </p><h3><strong>Same-Day Range Hood Repair</strong></h3><p
-        style="text-align: start">
-        Yes, we specialize in same-day repair services for range hoods in Los
-        Angeles, emphasizing swift and practical solutions to your appliance
-        issues.
-      </p><h3><strong>Range Hood Repair Costs</strong></h3><p
-        style="text-align: start">
-        Costs vary based on the extent of the repair, necessary parts, and the
-        model of your range hood. We offer competitive, transparent pricing and
-        detailed estimates.
-      </p><h3><strong>Warranty on Range Hood Repair Services</strong></h3><p
-        style="text-align: start">
-        Our repair services come with a warranty, including 30 days of labor and
-        up to 3 months for parts, showcasing our dedication to quality and
-        customer satisfaction.
-      </p><h3><strong>Preventative Maintenance for Range Hoods</strong></h3><p
-        style="text-align: start">
-        We provide maintenance services to extend your range hood's lifespan and
-        ensure its efficiency, including inspections, cleaning, and necessary
-        adjustments or replacements.
-      </p><h3><strong>Duration of Range Hood Repair Services</strong></h3><p
-        style="text-align: start">
-        The time required for range hood repairs can vary, but we aim to provide
-        fast, effective service, often completing repairs on the same day to
-        minimize any disruption to your routine.
-      </p><p style="text-align: start">
-        By addressing these FAQs, we strive to offer comprehensive information
-        about our range of hood repair services in Los Angeles, highlighting the
-        advantages and ensuring our customers are fully informed about our
-        extensive offerings.
-      </p>
-    </main>
-  </Container>
- 
+    
+      <div class="page213-content" id="faqs">
+
+
+        <div class="content__page-full-hed">
+          <div class="content__page-hed-h">
+            <h2>FAQs for Range Hood Repair</h2>
+          </div>
+        </div>
+        
+        <div class="content__page-full-desc">
+          <div class="content__page-desc">
+            <div class="faq-full" id="faqs-anchor">
+        
+              <div class="FAQ">
+                <div class="fa">
+                  <h3>How soon can a technician come to fix my range hood?</h3>
+                </div>
+                <div class="fa_plus">︾</div>
+                <div class="fa_minus">︽</div>
+              </div>
+              <div class="questions">
+                <p>We understand the importance of a fully functional <strong>range hood</strong> in maintaining a clean and comfortable kitchen. You can schedule a <strong>same-day appointment</strong> or choose a time that fits your schedule. Our <strong>service technicians</strong> work flexibly to accommodate your needs.</p>
+              </div>
+        
+              <div class="FAQ">
+                <div class="fa">
+                  <h3>What is the diagnostic cost for a range hood repair?</h3>
+                </div>
+                <div class="fa_plus">︾</div>
+                <div class="fa_minus">︽</div>
+              </div>
+              <div class="questions">
+                <p>Our diagnostic fee is $89, covering a comprehensive inspection to accurately identify the problem. Whether it's a <strong>faulty fan motor</strong>, <strong>control board issue</strong>, or a clogged filter, our experts will provide a thorough assessment.</p>
+              </div>
+        
+              <div class="FAQ">
+                <div class="fa">
+                  <h3>Do you use original parts for range hood repairs?</h3>
+                </div>
+                <div class="fa_plus">︾</div>
+                <div class="fa_minus">︽</div>
+              </div>
+              <div class="questions">
+                <p>Yes, we only use high-quality, original parts from trusted suppliers, such as <strong>fan blades</strong>, <strong>blower wheel housings</strong>, and <strong>control boards</strong>. All replacement parts are backed by warranties starting at 3 months, ensuring reliable, long-lasting repairs.</p>
+              </div>
+        
+              <div class="FAQ">
+                <div class="fa">
+                  <h3>How much will it cost to repair my range hood?</h3>
+                </div>
+                <div class="fa_plus">︾</div>
+                <div class="fa_minus">︽</div>
+              </div>
+              <div class="questions">
+                <p>The cost of repair depends on the issue and the required parts. After the diagnostic, we provide a detailed, transparent quote that includes labor and parts. From fixing <strong>motor bearings</strong> to replacing a <strong>defective switch</strong>, you'll know exactly what to expect.</p>
+              </div>
+        
+              <div class="FAQ">
+                <div class="fa">
+                  <h3>How long will it take to repair my range hood?</h3>
+                </div>
+                <div class="fa_plus">︾</div>
+                <div class="fa_minus">︽</div>
+              </div>
+              <div class="questions">
+                <p>Most common <strong>range hood issues</strong> can be fixed the same day, as our technicians carry essential parts with them. If specialized parts are required, delivery typically takes 2–3 days, and we’ll complete the repair promptly thereafter.</p>
+              </div>
+        
+              <div class="FAQ">
+                <div class="fa">
+                  <h3>Is the service fee waived if I approve the repair?</h3>
+                </div>
+                <div class="fa_plus">︾</div>
+                <div class="fa_minus">︽</div>
+              </div>
+              <div class="questions">
+                <p>Yes, the service fee is waived if you proceed with the repair. This policy helps keep your overall repair costs as low as possible.</p>
+              </div>
+        
+              <div class="FAQ">
+                <div class="fa">
+                  <h3>Do you provide a warranty on labor for range hood repairs?</h3>
+                </div>
+                <div class="fa_plus">︾</div>
+                <div class="fa_minus">︽</div>
+              </div>
+              <div class="questions">
+                <p>Absolutely. We offer a standard 3-month warranty on labor for <strong>range hood repairs</strong>. For more extensive work, such as <strong>motor replacement</strong> or <strong>control board repairs</strong>, we may extend the warranty up to 1 year for your peace of mind.</p>
+              </div>
+        
+              <div class="FAQ">
+                <div class="fa">
+                  <h3>Are your technicians certified to handle range hood repairs?</h3>
+                </div>
+                <div class="fa_plus">︾</div>
+                <div class="fa_minus">︽</div>
+              </div>
+              <div class="questions">
+                <p>Yes, our certified technicians are trained to handle a wide range of <strong>range hood brands</strong> and models. From diagnosing <strong>fan motor issues</strong> to addressing <strong>ductwork problems</strong>, our team is highly skilled and experienced.</p>
+              </div>
+        
+              <div class="FAQ">
+                <div class="fa">
+                  <h3>If my range hood is working fine, do I still need maintenance?</h3>
+                </div>
+                <div class="fa_plus">︾</div>
+                <div class="fa_minus">︽</div>
+              </div>
+              <div class="questions">
+                <p>Yes, regular maintenance is essential for extending the life of your <strong>vent hood</strong>. Dust, grease, and debris can accumulate over time, causing your unit to work harder and reducing its efficiency. Routine maintenance, such as <strong>filter cleaning</strong> and <strong>motor inspections</strong>, helps prevent costly repairs and ensures your hood operates at peak performance.</p>
+              </div>
+        
+              <!-- Add more FAQs here following the same structure -->
+        
+            </div>
+          </div>
+        </div>
+        
+        
+              <!-- Additional FAQs can be added here following the same structure -->
+        
+            </div>
+          </div>
+        </div>
+        
+        <Btn />
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</Container>
 <Cta />
+  <Arrow />
+  <Focus />
+  <Faqs />
+  <LogoBrands />
+
